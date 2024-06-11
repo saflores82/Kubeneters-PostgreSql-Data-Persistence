@@ -1,0 +1,20 @@
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mipostgresvolumenpersistente
+  namespace: paradigma
+spec:
+  containers:
+  - name: postgres
+    image: postgres
+    env:
+    - name: POSTGRES_PASSWORD
+      value: "paradigma"
+    volumeMounts:
+    - mountPath: /var/lib/postgresql/data
+      name: postgredb
+  volumes:
+  - name: postgredb
+    persistentVolumeClaim:
+      claimName: mipvc
