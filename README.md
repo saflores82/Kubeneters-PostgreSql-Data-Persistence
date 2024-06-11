@@ -1,6 +1,4 @@
-# Kubernetes-PostgreSQL-Data-Persistence
-
-## Deploy a PostgreSQL Database in a Kubernetes Pod with Data Persistence
+# Deploy a PostgreSQL Database in a Kubernetes Pod with Data Persistence
 
 En esta práctica nos vamos a centrar en el despliegue de una base de datos PostgreSQL en un pod de Kubernetes con persistencia de datos. Veremos cómo, al eliminar el pod y volverlo a crear, los datos de la base de datos se mantienen.
 
